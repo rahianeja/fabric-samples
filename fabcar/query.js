@@ -49,7 +49,7 @@ Promise.resolve().then(() => {
         chaincodeId: options.chaincode_id,
         txId: transaction_id,
         fcn: 'queryAllCars',
-        args: ['']
+        args: ['CAR4']
     };
     return channel.queryByChaincode(request);
 }).then((query_responses) => {
